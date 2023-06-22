@@ -1,0 +1,61 @@
+ {
+	margin: 0;/* Se quita el margen  */
+	padding: 0;/* es el espacio alrededor del contenido del elemento  */
+	font-family: sans-serif;/*se aplica una fuente  */
+	box-sizing: border-box;/*permite incluir el relleno y el borde en el ancho y alto total de un elemento. Con border-box el relleno y borde están incluidos en el ancho y alto*/
+}
+body {/* Se edita el cuerpod del documento*/
+background: #DEDEDE;/* Cambia color del backgound  */
+display: flex;/*Display especifica el tipo de cuadro de representación utilizado para un elemento. El elemento se comporta como un elemento de bloque y establece su contenido de acuerdo con el modelo de flexbox. */
+min-height: 100vh;/* para que ocupe todo el alto del  */
+}
+form{/* se edita los estilos del formulario */
+	margin:auto;/* Centrarlo */
+	width: 50%;/* Especifica la anchura del area responsive */
+	max-width: 500px;/*ancho maximo para el responsive*/
+	background: #F3F3F3;/* Cambia color del backgound  */
+	padding: 30px;/* es el espacio alrededor del contenido del elemento  */
+	border: 1px solid rgba(0,0,0,0.2);/* es el color y tipo del borde  */
+}
+
+h2 {/*se edita la etiqueta h2*/
+	text-align: center;/*especifica la alineación horizontal del texto en un elemento, en este caso Centrado  */
+	margin-bottom: 20px;/*margen inferior a 20px */
+	color: rgba(0,0,0,0.5);/* color del h2*/
+}
+
+input{/*se edita el input*/
+display: block;/* Display especifica el tipo de cuadro de representación utilizado para un elemento. El elemento genera un cuadro de elemento de bloque.*/
+padding: 10px;/* es el espacio alrededor del contenido del elemento  */
+width: 100%;/* Especifica la anchura del area */
+margin: 30px 0;/* asigna 30 pixeles al margen hacia arriba y 0 hacia los costados */
+font-size: 20px;/*tamaño del fondo*/
+}
+
+input[type="submit"]{/*edita solo al boton */
+	background: linear-gradient(#FFDA63, #FFB940);/* degradado a el boton */
+	border: 0;/*quita el borde*/
+	color: brown;/*color de la letra*/
+	opacity: 0.8;/*opacidad de la letra*/
+	cursor: pointer;/*cambia el cursor estando encima del boton*/
+	border-radius: 20px;/*cambia el borde del boton */
+	margin-bottom: 0;/*Saca el margen del boton */
+}
+input[type="submit"]:hover {/*cuando se pasa el mouse */
+opacity: 1;/* se cambia la opacidad*/
+
+}
+input[type'="submit"]:active {/* el instante en el que se hace click*/
+	transform: scale(0.95);/*se reduce el boton */
+}
+
+
+@media(max-width:768px ){ /*en este tamaño de la pantalla*/
+	form{/* se edita los estilos del formulario */
+		width: 75%;/* Especifica la anchura del area */
+	}
+	@media(max-width:480px ){/*cuando este en este tamaño de pantalla*/
+	form{/* se edita los estilos del formulario */
+		width: 95%;/* Especifica la anchura del area */
+	}
+}

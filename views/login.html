@@ -1,0 +1,25 @@
+<!DOCTYPE html>  <!--En esta linea se indica el tipo de documento que se esta creando-->
+<html lang="es"><!-- html envolvera el resto del codigo por que asi lo determina la estructura, en html5 se agrega lang que define el idioma humano del contenido -->
+<head> <!--La cabecera del documento, proveeremos información general acerca del documento como el titulo, e incorporaremos los archivos externos con estilos, códigos Javascript o incluso imágenes-->
+<title> Formulario de login </title><!-- Esta etiqueta Especifica el titulo del documento -->
+<meta charset="UTF-8"> <!--Especifica la codificación de caracteres para el documento HTML -->
+
+<meta name="viewport" content="width=device-width, user-scalable=no, inical-scale=1, maximum-scale=1, minimum-scale=1"><!--controlar la composición en los navegadores móviles - con content width=device-width es para basar el ancho de tu viewport en el dispositivo en cuestión - user-scalable=no desactiva el zoom del navegador en una página web  -La propiedad initial-scale controla el nivel de zoom cuando la página se carga por primera vez - El maximum-scaleparámetro limita la cantidad que el usuario puede hacer zoom - minimum-scale=1 define el zoom mínimo que los usuarios del sitio web pueden hacer -->
+<link rel="stylesheet" href="views/CSS/bootstrap.min.css">
+<link rel="stylesheet" href="views/CSS/Estilos.css"><!-- Link Es usado para incorporar estilos, códigos Javascript, imágenes o iconos desde archivos externos. rel relacion entre el documento y el archivo, informa al navegador que tipo de archivo se enviara. href incorpora el archivo querido -->
+</head><!--se cierra la etiqueta head -->
+<body><!--Adentro esta el cuerpo de la pagina -->
+<form class="datos" action="models/metadatos.php" method="post">
+	<!--indicamos que los datos al momento de clickear en el boton se van al archivo  metadatos.php -->
+<div class="cuadro">
+	<h1 class="titulo">Formulario de Login</h1><br><!--con h2 se establece el tamaño de la letra que esta entre estas etiquetas y se la imprime en la pagina web-->
+	<label for="nombre">Username</label><br>
+	<input type="text" name="User" placeholder="&#128272; Usuario" id="nombre"><br><!-- se agrega un input de tipo texto para que se pueda ver lo que uno ingresa.placeholder es el texto que va de fondo, con &#128272 se agrega un icono y con name se le agrega un nombre para poder luego llamarlo en php -->
+	<label for="pass">Password</label></br>
+	<input type="password" name="Pass" placeholder="&#128272; Contraseña" id="pass"><br><br><!-- se agrega un inputo de tipo password para que no se pueda ver lo que uno ingresa. placeholder es el texto que va de fondo, con &#128272 se agrega un icono y con name se le agrega un nombre para poder luego llamarlo con php -->
+	<input type="submit" name="enviar" value="Ingresar"><!--input de tipo submit para que se un boton y value es el texto -->
+	<input type="submit" value="Limpiar"><!--input de tipo submit para que se un boton y value es el texto -->
+</div>
+	</form><!-- Cierrra la etiqueta form -->
+</body><!--se cierra la etiqueta body  -->
+</html><!--se cierra la etiqueta html -->
